@@ -1,6 +1,6 @@
-package hrs.model;
+package model;
 
-import hrs.entity.Guest;
+import entity.Guest;
 import java.util.ArrayList;
 
 public class Model {
@@ -11,7 +11,7 @@ public class Model {
     public Model() {
     
         booker = new Guest();
-        bookings = new ArrayList<>();
+        bookings = new ArrayList<Guest>();
     } 
     
     public Guest getBooker(){

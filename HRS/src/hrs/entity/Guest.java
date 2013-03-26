@@ -1,4 +1,4 @@
-package hrs.entity;
+package entity;
 
 public class Guest {
 

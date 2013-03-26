@@ -2,7 +2,7 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package hrs.gui;
+package gui;
 
 /**
  *
@@ -26,6 +26,7 @@ public class LogIn extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jLayeredPane1 = new javax.swing.JLayeredPane();
         titleLabel = new javax.swing.JLabel();
         userLabel = new javax.swing.JLabel();
         pwLabel = new javax.swing.JLabel();
@@ -36,10 +37,20 @@ public class LogIn extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         titleLabel.setText("Welcome to Roth Hotels!");
+        titleLabel.setBounds(90, 40, 119, 14);
+        jLayeredPane1.add(titleLabel, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         userLabel.setText("Username:");
+        userLabel.setBounds(70, 80, 52, 14);
+        jLayeredPane1.add(userLabel, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         pwLabel.setText("Password:");
+        pwLabel.setBounds(70, 110, 50, 14);
+        jLayeredPane1.add(pwLabel, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        userTextField.setBounds(140, 80, 81, 20);
+        jLayeredPane1.add(userTextField, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        pwTextField.setBounds(140, 110, 81, 20);
+        jLayeredPane1.add(pwTextField, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         logInbtn.setText("LOG IN");
         logInbtn.addActionListener(new java.awt.event.ActionListener() {
@@ -47,47 +58,18 @@ public class LogIn extends javax.swing.JFrame {
                 logInbtnActionPerformed(evt);
             }
         });
+        logInbtn.setBounds(110, 150, 67, 23);
+        jLayeredPane1.add(logInbtn, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(70, 70, 70)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(userLabel)
-                            .addComponent(pwLabel))
-                        .addGap(26, 26, 26)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(userTextField, javax.swing.GroupLayout.DEFAULT_SIZE, 81, Short.MAX_VALUE)
-                            .addComponent(pwTextField)))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(88, 88, 88)
-                        .addComponent(titleLabel)))
-                .addContainerGap(78, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(logInbtn)
-                .addGap(119, 119, 119))
+            .addComponent(jLayeredPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 307, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(27, 27, 27)
-                .addComponent(titleLabel)
-                .addGap(26, 26, 26)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(userLabel)
-                    .addComponent(userTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(pwLabel)
-                    .addComponent(pwTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 23, Short.MAX_VALUE)
-                .addComponent(logInbtn)
-                .addContainerGap())
+            .addComponent(jLayeredPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 237, Short.MAX_VALUE)
         );
 
         pack();
@@ -132,6 +114,7 @@ public class LogIn extends javax.swing.JFrame {
         });
     }
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLayeredPane jLayeredPane1;
     private javax.swing.JButton logInbtn;
     private javax.swing.JLabel pwLabel;
     private javax.swing.JTextField pwTextField;
