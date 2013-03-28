@@ -1,16 +1,16 @@
-package controller;
+package hrs.controller;
 
-import model.Model;
-import gui.Reservation;
-import entity.Guest;
+import hrs.model.GuestModel;
+import hrs.gui.Reservation;
+import hrs.entity.Guest;
 
 public class Controller 
 {
  
     private Reservation reserve;
-    private Model model;
+    private GuestModel model;
     
-    public Controller(Reservation reserve,  Model model){
+    public Controller(Reservation reserve,  GuestModel model){
         this.model = model;
         this.reserve = reserve;
     }
@@ -36,6 +36,10 @@ public class Controller
     }
     //</editor-fold>
     
+    public void view()
+    {
+        model.getBookings();
+    }
     
     public void reset(){
         

@@ -1,21 +1,8 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
+package hrs.gui;
 
-/*
- * Home.java
- *
- * Created on Mar 26, 2013, 1:37:02 PM
- */
-package gui;
-
-/**
- *
- * @author Chan 'n' Villanueva
- */
 public class Home extends javax.swing.JDialog {
 
+    
     /** Creates new form Home */
     public Home(java.awt.Frame parent, boolean modal) {
         super(parent, modal);
@@ -32,27 +19,65 @@ public class Home extends javax.swing.JDialog {
     private void initComponents() {
 
         jLayeredPane1 = new javax.swing.JLayeredPane();
+        resBtn = new javax.swing.JButton();
+        exitBtn = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
-        jLabel1.setText("jLabel1");
-        jLabel1.setBounds(120, 120, 34, 14);
+        resBtn.setFont(new java.awt.Font("Miriam", 0, 11)); // NOI18N
+        resBtn.setText("BOOK A RESERVATION");
+        resBtn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                resBtnActionPerformed(evt);
+            }
+        });
+        resBtn.setBounds(360, 140, 160, 30);
+        jLayeredPane1.add(resBtn, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        exitBtn.setFont(new java.awt.Font("Miriam", 0, 11)); // NOI18N
+        exitBtn.setText("EXIT");
+        exitBtn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                exitBtnActionPerformed(evt);
+            }
+        });
+        exitBtn.setBounds(360, 190, 160, 30);
+        jLayeredPane1.add(exitBtn, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\Kim\\Downloads\\nightviewburjalarab.jpg")); // NOI18N
+        jLabel1.setText("book");
+        jLabel1.setBounds(-50, -10, 1529, 480);
         jLayeredPane1.add(jLabel1, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLayeredPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 400, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(jLayeredPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 591, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLayeredPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 300, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(jLayeredPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 411, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void resBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_resBtnActionPerformed
+       LogIn view1 = new LogIn();
+       super.setVisible(false);
+       view1.setVisible(true);
+       
+    }//GEN-LAST:event_resBtnActionPerformed
+
+    private void exitBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_exitBtnActionPerformed
+        System.exit(0);
+    }//GEN-LAST:event_exitBtnActionPerformed
 
     /**
      * @param args the command line arguments
@@ -98,7 +123,9 @@ public class Home extends javax.swing.JDialog {
         });
     }
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton exitBtn;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLayeredPane jLayeredPane1;
+    private javax.swing.JButton resBtn;
     // End of variables declaration//GEN-END:variables
 }

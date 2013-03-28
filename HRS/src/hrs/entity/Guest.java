@@ -1,4 +1,4 @@
-package entity;
+package hrs.entity;
 
 public class Guest {
 
@@ -129,6 +129,5 @@ public class Guest {
     public void setRoomtype(String roomtype) {
         this.roomtype = roomtype;
     }
-    
     
 }
