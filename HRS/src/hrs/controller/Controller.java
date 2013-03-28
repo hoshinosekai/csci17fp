@@ -2,6 +2,7 @@ package hrs.controller;
 
 import hrs.model.GuestModel;
 import hrs.gui.Reservation;
+import hrs.gui.Occupants;
 import hrs.entity.Guest;
 
 public class Controller 

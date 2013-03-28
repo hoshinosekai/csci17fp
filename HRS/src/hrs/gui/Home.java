@@ -18,35 +18,43 @@ public class Home extends javax.swing.JDialog {
 
         jLayeredPane1 = new javax.swing.JLayeredPane();
         resBtn = new javax.swing.JButton();
-        exitBtn = new javax.swing.JButton();
-        jLabel1 = new javax.swing.JLabel();
+        resBtn1 = new javax.swing.JButton();
+        lblTitle = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
-        resBtn.setFont(new java.awt.Font("Miriam", 0, 11)); // NOI18N
-        resBtn.setText("BOOK A RESERVATION");
+        resBtn.setFont(new java.awt.Font("Modern No. 20", 1, 18)); // NOI18N
+        resBtn.setText("VIEW BOOKINGS");
         resBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 resBtnActionPerformed(evt);
             }
         });
-        resBtn.setBounds(360, 140, 160, 30);
+        resBtn.setBounds(260, 190, 260, 30);
         jLayeredPane1.add(resBtn, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
-        exitBtn.setFont(new java.awt.Font("Miriam", 0, 11)); // NOI18N
-        exitBtn.setText("EXIT");
-        exitBtn.addActionListener(new java.awt.event.ActionListener() {
+        resBtn1.setFont(new java.awt.Font("Modern No. 20", 1, 18)); // NOI18N
+        resBtn1.setText("ADD A BOOKING");
+        resBtn1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                exitBtnActionPerformed(evt);
+                resBtn1ActionPerformed(evt);
             }
         });
-        exitBtn.setBounds(360, 190, 160, 30);
-        jLayeredPane1.add(exitBtn, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        resBtn1.setBounds(260, 140, 260, 30);
+        jLayeredPane1.add(resBtn1, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
-        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\Kim\\Downloads\\nightviewburjalarab.jpg")); // NOI18N
-        jLabel1.setText("book");
-        jLabel1.setBounds(-50, -10, 1529, 480);
-        jLayeredPane1.add(jLabel1, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        lblTitle.setFont(new java.awt.Font("Vivaldi", 3, 36)); // NOI18N
+        lblTitle.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblTitle.setText("Maria~Antonio Resort Hotel");
+        lblTitle.setBounds(80, 60, 460, 60);
+        jLayeredPane1.add(lblTitle, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/hrs/gui/home.jpg"))); // NOI18N
+        jLabel2.setText("jLabel2");
+        jLabel2.setBounds(0, 0, 600, 420);
+        jLayeredPane1.add(jLabel2, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -73,9 +81,9 @@ public class Home extends javax.swing.JDialog {
        
     }//GEN-LAST:event_resBtnActionPerformed
 
-    private void exitBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_exitBtnActionPerformed
-        System.exit(0);
-    }//GEN-LAST:event_exitBtnActionPerformed
+private void resBtn1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_resBtn1ActionPerformed
+// TODO add your handling code here:
+}//GEN-LAST:event_resBtn1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -121,9 +129,10 @@ public class Home extends javax.swing.JDialog {
         });
     }
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton exitBtn;
-    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JLayeredPane jLayeredPane1;
+    private javax.swing.JLabel lblTitle;
     private javax.swing.JButton resBtn;
+    private javax.swing.JButton resBtn1;
     // End of variables declaration//GEN-END:variables
 }

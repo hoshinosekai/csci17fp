@@ -63,6 +63,7 @@ public class Reservation extends javax.swing.JFrame {
         txtOccupant = new javax.swing.JTextField();
         btnBook = new javax.swing.JButton();
         btnClear = new javax.swing.JButton();
+        lblBG = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -93,7 +94,7 @@ public class Reservation extends javax.swing.JFrame {
         pnlGuestLayout.setHorizontalGroup(
             pnlGuestLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(pnlGuestLayout.createSequentialGroup()
-                .addGap(5, 5, 5)
+                .addGap(10, 10, 10)
                 .addGroup(pnlGuestLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel7)
                     .addComponent(jLabel2)
@@ -102,14 +103,14 @@ public class Reservation extends javax.swing.JFrame {
                 .addGroup(pnlGuestLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(pnlGuestLayout.createSequentialGroup()
                         .addGap(9, 9, 9)
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 247, Short.MAX_VALUE)
+                        .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 244, Short.MAX_VALUE)
                         .addGap(44, 44, 44))
                     .addGroup(pnlGuestLayout.createSequentialGroup()
                         .addGap(3, 3, 3)
-                        .addComponent(txtName)
+                        .addComponent(txtName, javax.swing.GroupLayout.DEFAULT_SIZE, 256, Short.MAX_VALUE)
                         .addGap(38, 38, 38))
                     .addGroup(pnlGuestLayout.createSequentialGroup()
-                        .addComponent(txtEmail)
+                        .addComponent(txtEmail, javax.swing.GroupLayout.DEFAULT_SIZE, 259, Short.MAX_VALUE)
                         .addGap(38, 38, 38)))
                 .addGroup(pnlGuestLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(pnlGuestLayout.createSequentialGroup()
@@ -117,7 +118,7 @@ public class Reservation extends javax.swing.JFrame {
                         .addComponent(jLabel4)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(txtAge, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addContainerGap(109, Short.MAX_VALUE))
+                        .addContainerGap(107, Short.MAX_VALUE))
                     .addGroup(pnlGuestLayout.createSequentialGroup()
                         .addGroup(pnlGuestLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addComponent(jLabel6)
@@ -127,11 +128,11 @@ public class Reservation extends javax.swing.JFrame {
                         .addGroup(pnlGuestLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(pnlGuestLayout.createSequentialGroup()
                                 .addGroup(pnlGuestLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addComponent(txtContact, javax.swing.GroupLayout.DEFAULT_SIZE, 173, Short.MAX_VALUE)
-                                    .addComponent(txtGender, javax.swing.GroupLayout.Alignment.LEADING))
+                                    .addComponent(txtContact, javax.swing.GroupLayout.DEFAULT_SIZE, 171, Short.MAX_VALUE)
+                                    .addComponent(txtGender, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 171, Short.MAX_VALUE))
                                 .addGap(21, 21, 21))
                             .addGroup(pnlGuestLayout.createSequentialGroup()
-                                .addComponent(frmtxtDate)
+                                .addComponent(frmtxtDate, javax.swing.GroupLayout.DEFAULT_SIZE, 182, Short.MAX_VALUE)
                                 .addContainerGap())))))
         );
         pnlGuestLayout.setVerticalGroup(
@@ -150,12 +151,11 @@ public class Reservation extends javax.swing.JFrame {
                         .addGroup(pnlGuestLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(pnlGuestLayout.createSequentialGroup()
                                 .addGap(39, 39, 39)
-                                .addComponent(jLabel7)
-                                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnlGuestLayout.createSequentialGroup()
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                                .addComponent(jLabel7))
+                            .addGroup(pnlGuestLayout.createSequentialGroup()
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 20, Short.MAX_VALUE)
+                                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addContainerGap(35, Short.MAX_VALUE))
                     .addGroup(pnlGuestLayout.createSequentialGroup()
                         .addGroup(pnlGuestLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel1)
@@ -169,9 +169,9 @@ public class Reservation extends javax.swing.JFrame {
                             .addComponent(txtGender, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jLabel5))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(pnlGuestLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(txtContact, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel6))
+                        .addGroup(pnlGuestLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel6)
+                            .addComponent(txtContact, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(66, 66, 66))))
         );
 
@@ -265,6 +265,12 @@ public class Reservation extends javax.swing.JFrame {
         btnClear.setBounds(370, 400, 70, 23);
         jLayeredPane1.add(btnClear, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
+        lblBG.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblBG.setIcon(new javax.swing.ImageIcon(getClass().getResource("/hrs/gui/reserve.jpg"))); // NOI18N
+        lblBG.setText("jLabel13");
+        lblBG.setBounds(-60, -36, 740, 490);
+        jLayeredPane1.add(lblBG, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -340,6 +346,7 @@ private void btnClearActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRS
     private javax.swing.JLabel jLabel9;
     private javax.swing.JLayeredPane jLayeredPane1;
     private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JLabel lblBG;
     private javax.swing.JPanel pnlBooking;
     private javax.swing.JPanel pnlGuest;
     private javax.swing.JTextField txtAge;

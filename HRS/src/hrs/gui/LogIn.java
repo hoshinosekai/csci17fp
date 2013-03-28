@@ -1,4 +1,5 @@
 package hrs.gui;
+import javax.swing.JOptionPane;
 
 public class LogIn extends javax.swing.JFrame {
 
@@ -17,100 +18,89 @@ public class LogIn extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        adminLabl = new javax.swing.JLabel();
+        jLayeredPane1 = new javax.swing.JLayeredPane();
         adminTxt = new javax.swing.JTextField();
-        pwLabl = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
-        logBtn = new javax.swing.JButton();
+        adminLabl = new javax.swing.JLabel();
         cancelBtn = new javax.swing.JButton();
+        logBtn = new javax.swing.JButton();
+        jLabel3 = new javax.swing.JLabel();
+        pwLabl = new javax.swing.JLabel();
         pwTxt = new javax.swing.JPasswordField();
+        jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        adminLabl.setFont(new java.awt.Font("David", 0, 24)); // NOI18N
+        adminTxt.setFont(new java.awt.Font("Arial", 0, 18));
+        adminTxt.setBounds(200, 120, 236, 38);
+        jLayeredPane1.add(adminTxt, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        adminLabl.setFont(new java.awt.Font("David", 0, 24));
         adminLabl.setText("ADMIN");
+        adminLabl.setBounds(60, 130, 112, 25);
+        jLayeredPane1.add(adminLabl, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
-        adminTxt.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
-
-        pwLabl.setFont(new java.awt.Font("David", 0, 24)); // NOI18N
-        pwLabl.setText("PASSWORD");
-
-        jLabel3.setFont(new java.awt.Font("Calvin", 0, 48)); // NOI18N
-        jLabel3.setText("Hotel Reservation");
-
-        logBtn.setFont(new java.awt.Font("Bauhaus 93", 0, 18)); // NOI18N
-        logBtn.setText("LOGIN");
-        logBtn.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                logBtnActionPerformed(evt);
-            }
-        });
-
-        cancelBtn.setFont(new java.awt.Font("Bauhaus 93", 0, 18)); // NOI18N
+        cancelBtn.setFont(new java.awt.Font("Bauhaus 93", 0, 18));
         cancelBtn.setText("CANCEL");
         cancelBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 cancelBtnActionPerformed(evt);
             }
         });
+        cancelBtn.setBounds(270, 260, 120, 48);
+        jLayeredPane1.add(cancelBtn, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
-        pwTxt.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
+        logBtn.setFont(new java.awt.Font("Bauhaus 93", 0, 18));
+        logBtn.setText("LOGIN");
+        logBtn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                logBtnActionPerformed(evt);
+            }
+        });
+        logBtn.setBounds(90, 260, 132, 48);
+        jLayeredPane1.add(logBtn, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        jLabel3.setFont(new java.awt.Font("French Script MT", 3, 48)); // NOI18N
+        jLabel3.setText("M~A RH Login");
+        jLabel3.setBounds(80, 20, 330, 77);
+        jLayeredPane1.add(jLabel3, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        pwLabl.setFont(new java.awt.Font("David", 0, 24));
+        pwLabl.setText("PASSWORD");
+        pwLabl.setBounds(40, 200, 129, 25);
+        jLayeredPane1.add(pwLabl, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        pwTxt.setFont(new java.awt.Font("Arial", 0, 18));
+        pwTxt.setBounds(200, 190, 236, 39);
+        jLayeredPane1.add(pwTxt, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/hrs/gui/login.jpg"))); // NOI18N
+        jLabel1.setText("jLabel1");
+        jLabel1.setBounds(-36, -16, 540, 380);
+        jLayeredPane1.add(jLabel1, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(127, 127, 127)
-                        .addComponent(logBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 132, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(49, 49, 49)
-                        .addComponent(cancelBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                        .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 398, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGroup(layout.createSequentialGroup()
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addGroup(layout.createSequentialGroup()
-                                    .addGap(95, 95, 95)
-                                    .addComponent(adminLabl, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                    .addContainerGap()
-                                    .addComponent(pwLabl)))
-                            .addGap(26, 26, 26)
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                .addComponent(adminTxt, javax.swing.GroupLayout.DEFAULT_SIZE, 236, Short.MAX_VALUE)
-                                .addComponent(pwTxt)))))
-                .addContainerGap(55, Short.MAX_VALUE))
+            .addComponent(jLayeredPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 482, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(25, 25, 25)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(adminLabl)
-                    .addComponent(adminTxt, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(29, 29, 29)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(pwTxt, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(pwLabl))
-                .addGap(35, 35, 35)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(logBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(cancelBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(44, Short.MAX_VALUE))
+            .addComponent(jLayeredPane1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 346, Short.MAX_VALUE)
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
     private void logBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_logBtnActionPerformed
-        Reservation view1 = new Reservation();
-       super.setVisible(false);
-       view1.setVisible(true);
-        
+        if(adminTxt.getText().equals("admin") && pwTxt.getPassword().toString().equals("admin")){
+            Reservation view1 = new Reservation();
+            super.setVisible(false);
+            view1.setVisible(true);
+        }else{
+            JOptionPane.showMessageDialog(this, "Invalid Admin or Password, please register to secure ur account.");
+        }
     }//GEN-LAST:event_logBtnActionPerformed
 
     private void cancelBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cancelBtnActionPerformed
@@ -156,7 +146,9 @@ public class LogIn extends javax.swing.JFrame {
     private javax.swing.JLabel adminLabl;
     private javax.swing.JTextField adminTxt;
     private javax.swing.JButton cancelBtn;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel3;
+    private javax.swing.JLayeredPane jLayeredPane1;
     private javax.swing.JButton logBtn;
     private javax.swing.JLabel pwLabl;
     private javax.swing.JPasswordField pwTxt;
