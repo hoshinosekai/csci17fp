@@ -2,8 +2,6 @@ package hrs.gui;
 
 public class Home extends javax.swing.JDialog {
 
-    
-    /** Creates new form Home */
     public Home(java.awt.Frame parent, boolean modal) {
         super(parent, modal);
         initComponents();
