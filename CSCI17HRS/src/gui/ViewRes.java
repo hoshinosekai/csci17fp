@@ -1,6 +1,6 @@
 package gui;
 
-import controller.HotelDAO;
+import DAO.HotelDAO;
 import entity.Guest;
 import java.util.ArrayList;
 import javax.swing.JOptionPane;

@@ -1,6 +1,6 @@
 package gui;
 
-import controller.HotelDAO;
+import DAO.HotelDAO;
 import javax.swing.JOptionPane;
 
 public class Reservation extends javax.swing.JFrame {
